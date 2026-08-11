@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>GBLU — All Links</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  :root{
+    --ink:#f2ede2;
+    --paper:#0d2340;
+    --clay:#4f8ff0;
+    --gold:#8ab6ff;
+    --line: rgba(242,237,226,0.14);
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background: var(--paper);
+    background-image:
+      radial-gradient(circle at 15% 8%, rgba(79,143,240,0.22), transparent 40%),
+      radial-gradient(circle at 85% 92%, rgba(138,182,255,0.18), transparent 45%);
+    color: var(--ink);
+    font-family: 'Iowan Old Style','Georgia','Times New Roman',serif;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    padding: 56px 20px 80px;
+  }
+  .card{
+    width:100%;
+    max-width:460px;
+  }
+  .eyebrow{
+    font-family:'Helvetica Neue',Arial,sans-serif;
+    font-size:11px;
+    letter-spacing:0.22em;
+    text-transform:uppercase;
+    color: var(--clay);
+    text-align:center;
+    margin-bottom:14px;
+  }
+  h1{
+    font-size:30px;
+    line-height:1.15;
+    text-align:center;
+    margin:0 0 6px;
+    letter-spacing:-0.01em;
+  }
+  h1 span{ color: var(--clay); }
+  .tagline{
+    text-align:center;
+    font-family:'Helvetica Neue',Arial,sans-serif;
+    font-size:13.5px;
+    color: rgba(242,237,226,0.68);
+    max-width:340px;
+    margin: 0 auto 40px;
+    line-height:1.5;
+  }
+  .pillars{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    font-family:'Helvetica Neue',Arial,sans-serif;
+    font-size:10.5px;
+    letter-spacing:0.05em;
+    color: rgba(242,237,226,0.5);
+    margin: -22px 0 34px;
+  }
+  .pillars span:not(:last-child)::after{ content:'·'; margin-left:10px; color: var(--gold); }
+
+  .links{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+  }
+  a.link{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    padding:16px 18px;
+    background: rgba(242,237,226,0.06);
+    border:1px solid var(--line);
+    border-radius:3px;
+    text-decoration:none;
+    color: var(--ink);
+    transition: border-color .15s ease, transform .15s ease, background .15s ease;
+    position:relative;
+    overflow:hidden;
+  }
+  a.link::before{
+    content:'';
+    position:absolute;
+    left:0; top:0; bottom:0;
+    width:3px;
+    background: var(--clay);
+    transform: scaleY(0);
+    transform-origin:bottom;
+    transition: transform .18s ease;
+  }
+  a.link:hover{
+    border-color: rgba(79,143,240,0.5);
+    background: rgba(242,237,226,0.1);
+    transform: translateX(3px);
+  }
+  a.link:hover::before{ transform: scaleY(1); }
+  a.link:focus-visible{
+    outline:2px solid var(--clay);
+    outline-offset:2px;
+  }
+  .icon{
+    width:34px; height:34px;
+    flex:0 0 34px;
+    border-radius:50%;
+    background: var(--clay);
+    color: var(--paper);
+    display:flex;align-items:center;justify-content:center;
+    font-family:'Helvetica Neue',Arial,sans-serif;
+    font-size:13px;
+    font-weight:600;
+  }
+  .meta{ flex:1; min-width:0; }
+  .name{
+    font-family:'Helvetica Neue',Arial,sans-serif;
+    font-weight:600;
+    font-size:15px;
+  }
+  .desc{
+    font-family:'Helvetica Neue',Arial,sans-serif;
+    font-size:12px;
+    color: rgba(242,237,226,0.55);
+    margin-top:1px;
+  }
+  .go{
+    font-family:'Helvetica Neue',Arial,sans-serif;
+    font-size:16px;
+    color: rgba(242,237,226,0.35);
+  }
+
+  footer{
+    text-align:center;
+    margin-top:44px;
+    font-family:'Helvetica Neue',Arial,sans-serif;
+    font-size:11px;
+    color: rgba(242,237,226,0.45);
+    letter-spacing:0.03em;
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    a.link, a.link::before { transition:none; }
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <h1>GBLU<br><span>Global Business &amp; Leadership Union</span></h1>
+    <p class="tagline">Connect. Lead. Build. Grow. — find GBLU wherever you are.</p>
+    <div class="pillars"><span>Leadership</span><span>Business</span><span>Entrepreneurship</span><span>Connection</span></div>
+
+    <div class="links">
+      <a class="link" href="https://gbluglobal-debug.github.io/GBLU" target="_blank" rel="noopener">
+        <div class="icon">W</div>
+        <div class="meta">
+          <div class="name">Website</div>
+          <div class="desc">About GBLU, our four pillars &amp; roadmap</div>
+        </div>
+        <div class="go">→</div>
+      </a>
+
+      <a class="link" href="https://www.linkedin.com/company/gblu-global/" target="_blank" rel="noopener">
+        <div class="icon">in</div>
+        <div class="meta">
+          <div class="name">LinkedIn</div>
+          <div class="desc">Professional updates &amp; partnerships</div>
+        </div>
+        <div class="go">→</div>
+      </a>
+
+      <a class="link" href="https://www.instagram.com/global_business_and_leadership/" target="_blank" rel="noopener">
+        <div class="icon">IG</div>
+        <div class="meta">
+          <div class="name">Instagram</div>
+          <div class="desc">Community highlights &amp; visuals</div>
+        </div>
+        <div class="go">→</div>
+      </a>
+
+      <a class="link" href="https://web.facebook.com/people/Global-Business-Leadership-Union/61592775405959/" target="_blank" rel="noopener">
+        <div class="icon">f</div>
+        <div class="meta">
+          <div class="name">Facebook</div>
+          <div class="desc">Announcements &amp; community posts</div>
+        </div>
+        <div class="go">→</div>
+      </a>
+
+      <a class="link" href="https://t.me/+Gxbru4C940NkM2E0" target="_blank" rel="noopener">
+        <div class="icon">TG</div>
+        <div class="meta">
+          <div class="name">Telegram</div>
+          <div class="desc">Join the group chat</div>
+        </div>
+        <div class="go">→</div>
+      </a>
+
+      <a class="link" href="mailto:gblu.global@gmail.com">
+        <div class="icon">@</div>
+        <div class="meta">
+          <div class="name">Email</div>
+          <div class="desc">gblu.global@gmail.com</div>
+        </div>
+        <div class="go">→</div>
+      </a>
+    </div>
+
+    <footer>GBLU is early-stage — thanks for building this with us.</footer>
+  </div>
+</body>
+</html>
