@@ -107,6 +107,11 @@
     outline:2px solid var(--clay);
     outline-offset:2px;
   }
+  a.link.featured{
+    border-color: rgba(138,182,255,0.55);
+    background: rgba(138,182,255,0.1);
+  }
+  a.link.featured::before{ transform: scaleY(1); background: var(--gold); }
   .icon{
     width:34px; height:34px;
     flex:0 0 34px;
@@ -117,6 +122,7 @@
     font-weight:600;
   }
   .icon.website{ background:#4f8ff0; color:#0d2340; }
+  .icon.registration{ background:#8ab6ff; color:#0d2340; }
   .icon.linkedin{ background:#0A66C2; }
   .icon.youtube{ background:#FF0000; }
   .icon.telegram{ background:#26A5E4; }
@@ -124,7 +130,7 @@
   .icon.x{ background:#000000; }
   .icon.email{ background:#8ab6ff; color:#0d2340; }
   .icon svg{ width:18px; height:18px; fill: currentColor; }
-  .icon.website svg, .icon.email svg{ fill:#0d2340; }
+  .icon.website svg, .icon.email svg, .icon.registration svg{ fill:#0d2340; }
   .icon.linkedin svg, .icon.youtube svg, .icon.telegram svg, .icon.facebook svg, .icon.x svg{ fill:#ffffff; }
   .logo-wrap{
     display:flex;
@@ -180,6 +186,15 @@
     <div class="pillars"><span>Leadership</span><span>Business</span><span>Entrepreneurship</span><span>Connection</span></div>
 
     <div class="links">
+      <a class="link featured" href="https://docs.google.com/forms/d/1VX4q5hQWRwPgxqolgPjthlkvd7rA6QNXzHrZWpLCLb0/edit" target="_blank" rel="noopener">
+        <div class="icon registration"><svg viewBox="0 0 24 24"><path d="M6 2h9l5 5v13a2 2 0 01-2 2H6a2 2 0 01-2-2V4a2 2 0 012-2zm8 1.5V8h4.5L14 3.5zM8 12h8v1.5H8V12zm0 3.5h8V17H8v-1.5zM8 8.5h4V10H8V8.5z"/></svg></div>
+        <div class="meta">
+          <div class="name">Registration</div>
+          <div class="desc">Register with GBLU</div>
+        </div>
+        <div class="go">→</div>
+      </a>
+
       <a class="link" href="https://gbluglobal-debug.github.io/GBLU" target="_blank" rel="noopener">
         <div class="icon website"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm6.93 6H15.6a15.6 15.6 0 00-1.3-4.5A8.03 8.03 0 0118.93 8zM12 4c.83 1.2 1.5 2.6 1.9 4H10.1c.4-1.4 1.07-2.8 1.9-4zM4.26 14a7.9 7.9 0 010-4h3.68a17 17 0 000 4H4.26zm.81 2h3.33c.32 1.6.87 3.1 1.6 4.5A8.03 8.03 0 015.07 16zm3.33-8H5.07a8.03 8.03 0 014.93-4.5A16.9 16.9 0 008.4 8zM12 20c-.83-1.2-1.5-2.6-1.9-4h3.8c-.4 1.4-1.07 2.8-1.9 4zm2.3-6H9.7a15 15 0 010-4h4.6a15 15 0 010 4zm.1 5.5c.73-1.4 1.28-2.9 1.6-4.5h3.33a8.03 8.03 0 01-4.93 4.5zM15.75 14a17 17 0 000-4h3.68a7.9 7.9 0 010 4h-3.68z"/></svg></div>
         <div class="meta">
